@@ -17,19 +17,6 @@ function setup() {
   var clearButton = select('#clearButton');
   clearButton.mousePressed(clearDrawing);
 
-  var firebaseConfig = {
-    apiKey: "AIzaSyCMhulRNZJkjrQQI0bZQ_9q83QbfTqgp8w",
-    authDomain: "c34project-71098.firebaseapp.com",
-    databaseURL: "https://c34project-71098.firebaseio.com",
-    projectId: "c34project-71098",
-    storageBucket: "c34project-71098.appspot.com",
-    messagingSenderId: "1039269669139",
-    appId: "1:1039269669139:web:38a17f655bee5880d892e6",
-    measurementId: "G-N9NY0QFJGQ"
-  };
-  firebase.initializeApp(firebaseConfig);
-  database = firebase.database();
-
   var params = getURLParams();
   console.log(params);
   if (params.id) {

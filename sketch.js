@@ -17,6 +17,8 @@ function setup() {
   var clearButton = select('#clearButton');
   clearButton.mousePressed(clearDrawing);
 
+  database = firebase.database();
+  
   var params = getURLParams();
   console.log(params);
   if (params.id) {
